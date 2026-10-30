@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "pack": "npm run build && electron-builder --dir",
     "dist:win": "npm run build && electron-builder --win",
-    "dist:mac": "npm run build && electron-builder --mac --universal",
+    "dist:mac": "npm run build && electron-builder --mac --universal --publish never",
     "dist:linux": "npm run build && electron-builder --linux",
     "verify": "npm run typecheck && npm test",
     "cli": "tsx scripts/dev-cli.ts",
